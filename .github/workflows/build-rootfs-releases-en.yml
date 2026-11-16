@@ -7,7 +7,7 @@ on:
         description: Distribution to build
         required: true
         type: choice
-        default: Debian-13
+        default: Arch
         options:
           - Debian-13
           - Ubuntu-24
@@ -27,7 +27,7 @@ on:
         description: Primary desktop (the one that autostarts)
         required: true
         type: choice
-        default: KDE
+        default: KDE Mobile
         options:
           - none
           - KDE
@@ -109,7 +109,7 @@ on:
         description: Install development tools
         required: true
         type: boolean
-        default: false
+        default: true
       enable_zip:
         description: Install compression tools
         required: true
@@ -119,7 +119,7 @@ on:
         description: Install Docker
         required: true
         type: boolean
-        default: false
+        default: true
       wayland_package_repository:
         description: Wayland package repository (public owner/repository)
         required: true

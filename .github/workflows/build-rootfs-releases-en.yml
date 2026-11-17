@@ -27,7 +27,7 @@ on:
         description: Primary desktop (the one that autostarts)
         required: true
         type: choice
-        default: KDE Mobile
+        default: none
         options:
           - none
           - KDE
